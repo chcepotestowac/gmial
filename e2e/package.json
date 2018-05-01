@@ -1,0 +1,28 @@
+{
+    "name": "e2e-app",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "e2e-single": "tsc && protractor protractor.conf.js --singleTest",
+        "e2e-suite": "tsc && protractor protractor.conf.js --suite",
+        "e2e-all": "tsc && protractor protractor.conf.js --all",
+        "postinstall": "webdriver-manager update --versions.chrome 2.35 --out_dir %cd%\\selenium",
+        "webdriver-clean": "webdriver-manager clean --out_dir %cd%\\selenium"
+    },
+    "dependencies": {
+        "lodash": "4.17.4",
+        "moment": "2.19.2"
+    },
+    "devDependencies": {
+        "@types/jasmine": "^2.5.41",
+        "@types/lodash": "^4.14.37",
+        "jasmine": "2.8.0",
+        "protractor": "5.2.0",
+        "typescript": "2.1.6",
+        "yargs": "10.0.3"
+    },
+    "engines": {
+        "node": ">=4.0.0"
+    },
+    "license": "UNLICENSED"
+}

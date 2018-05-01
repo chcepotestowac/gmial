@@ -1,0 +1,22 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": ".dist/",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "types": [
+      "node", "jasmine"
+    ],
+    "lib": [
+      "es2015"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    ".report"
+  ]
+}
